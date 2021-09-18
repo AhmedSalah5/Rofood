@@ -1,3 +1,13 @@
+/*Fonts*/
+@font-face {
+    font-family: 'arabic-ui';
+    src: url('../fonts/alfont_com_ArabicUITextLight.otf');  
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+
+
+
 /*General Styles*/
 :root{
     --color1: #E5E7F8;
@@ -21,6 +31,8 @@
     
     --top-nav-h:60px;
     --side-nav-w:220px;
+    font-family: 'Source Sans Pro', sans-serif;
+    --font2 :'Source Sans Pro', sans-serif;
 }
 
 
@@ -33,6 +45,8 @@ body{
     text-align: right;
     direction: rtl;
     background: var(--color1);
+    font-family: 'arabic-ui', sans-serif;
+    font-size: 14px;
 }
 a,a:hover{
     text-decoration: none;
@@ -41,6 +55,9 @@ ul{
     list-style: none;
     margin: 0;
     padding: 0;
+}
+.font2{
+    font-family: var(--font2);
 }
 .title-icon{
     display: flex;
@@ -110,8 +127,13 @@ ul{
 }
 .top-nav .icon{
     color: #364be7;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
+.top-nav .badge{
+    top: 7px;
+    left: 4px;
+}
+
 /*side-nav*/
 .side-nav{
     width: var(--side-nav-w);
@@ -120,7 +142,7 @@ ul{
     overflow-y: scroll;
     top: var(--top-nav-h);
     right: 0;
-    padding: 15px 15px 50px;
+    padding: 15px 10px 30px;
 }
 .side-nav .logo{
     width: 75%;
@@ -135,17 +157,15 @@ ul{
     border-radius: 10px;
     padding: 25px 15px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-.side-nav  .menu li{
-    margin: 15px 0;
-}
+
 .side-nav  .menu li a{
     width: 100%;
     padding: 4px 0;
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--color6);
     cursor: pointer;
 }
