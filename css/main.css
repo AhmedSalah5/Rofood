@@ -6,8 +6,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 
 
-
-
 /*General Styles*/
 :root{
     --color1: #E5E7F8;
@@ -152,12 +150,13 @@ ul{
     width: 100%;
 }
 .side-nav  .menu{
+    min-height: 80vh;
     margin-top: 10px;
     background-color: var(--color2);
     border-radius: 10px;
-    padding: 25px 15px;
+    padding: 30px 15px 100px;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 
 .side-nav  .menu li a{
@@ -220,5 +219,4 @@ ul{
 .box ul li{
     padding: 5px;
     min-width: 50%;
-
 }
