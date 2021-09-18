@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <!-- Top Navbar -->
     <nav class="top-nav">
             <div class="col-2">
-
             </div>
             <div class="col-10">
                 <div class="row">
@@ -28,7 +28,7 @@
                         <div class="d-flex align-items-center">
                             <h2>متجر أبصار الذهبية</h2>
                             <div class="me-3 h-100 d-flex align-items-center">
-                                <span class="icon ms-2 text-info"><i class="bi bi-geo-alt"></i></span>
+                                <span class="icon ms-2 color-blue"><i class="bi bi-geo-alt"></i></span>
                                 <span>فرع المحمدية</span>
                             </div>                          
                         </div>                       
@@ -46,22 +46,20 @@
                         <span class="mx-2" id="dateTime"></span>
 
                         <a href="" class="position-relative me-2 ms-3">
-                            <span class="icon text-info"><i class="bi bi-envelope"></i></span>
+                            <span class="icon color-blue"><i class="bi bi-envelope"></i></span>
                             <span class="position-absolute translate-middle badge rounded-pill bg-secondary">5 <span class="visually-hidden">unread messages</span></span>
                             </span>
                         </a>
-
-
                         <a href="" class="position-relative me-3">
-                            <span class="icon text-info"><i class="bi bi-bell"></i></span>
+                            <span class="icon color-blue"><i class="bi bi-bell"></i></span>
                             <span class="position-absolute translate-middle badge rounded-pill bg-secondary">5 <span class="visually-hidden">unread alerts</span></span>
                         </a>
                     </div>
-                </div>
-                
+                </div>               
             </div>
+    </nav>   <!-- End Top Nav -->
 
-    </nav>
+    <!-- Start Side Nav -->
     <nav class="side-nav">
         <div class="logo"><img src="images/logo.png" alt="rofood_logo"></div>
         <ul class="menu">
@@ -74,11 +72,14 @@
             <li><a><span class="icon"><i class="fa fa-cog"></i></span>الإعدادات</a></li>
             <li><a><span class="icon"><i class="bi bi-shield-check"></i></span>الدعم الفني</a></li>
         </ul>
-    </nav>
+    </nav> <!-- End Side Nav -->
+
+    <!-- Start Content -->
     <div class="content">
         <div class="row">
             <div class="col-md-9">
                 <div class="col-12">
+                    <!-- Chart -->
                     <div class="chart">
                         <canvas id="myChart" style="max-height: 100%;"></canvas>
                     </div>
@@ -168,8 +169,7 @@
                         <li><span class="text-primary">3- </span>أحمد عبد الله</li>
                         <li><span class="text-primary">4- </span>سعود فيصل</li>
                         <li><span class="text-primary">5- </span>عبد الرحمن محمد</li>
-                    </ul>
-                    
+                    </ul>                   
                 </div>
             </div>
         </div>
@@ -208,8 +208,7 @@
                                         <span class="fw-light">محذوفة</span>
                                         <h5 class="color-red">1</h5>
                                     </div>
-                                </div>
-                                
+                                </div>                                
                             </div>
                         </div>
 
@@ -283,10 +282,12 @@
                 label: 'إيرادات',
                 data: [110, 150, 200, 90, 250, 300,230,380,160,150,190],
                 backgroundColor: '#001BB7',
+                barThickness: 16,
             },{
                 label:'مصروفات',
                 data: [160, 180, 220, 80, 240, 320,260,350,110,140,200],
                 backgroundColor: '#d2b0ff',
+                barThickness: 16,
             }]
         },
         options: {
@@ -294,15 +295,20 @@
                 y: {
                     beginAtZero: true,
                     suggestedMin:0,
-                    suggestedMax:400
-                }
+                    suggestedMax:400,
+                },
+                
             },
             plugins: {
                 title: {
                     display: true,
                     text: 'المبيعات السنوية',
+                    font: {
+                        size: 18
+                    }
                 }
-            }
+            },
+            width: 10,
         }
     });
     </script>
