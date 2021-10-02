@@ -38,20 +38,19 @@ $(document).ready(function () {
     $('.pay-method input[type="checkbox"]').on('click', function () {
 
         if ($(this).prop("checked") == true) {
-            $(this).parents('.pay-method').find('.money').show(300);
-            console.log($(this).attr('id'));
+            $(this).parents('.pay-method').find('.money').css("opacity", "1");
         } else {
-            $(this).parent().find('.money').hide(300);
+            $(this).parent().find('.money').css("opacity", "0");
         }
     })
 
     //Show Value input in Buy-invoice page
     $('#payment-method').on('change', function () {
-        var x = $('#payment-method').val();
-        if (x === "cash")
-            $('.amount').show(300);
+        var selectVal = $('#payment-method').val();
+        if (selectVal === "cash")
+            $('.amount').css("opacity", "1");
         else {
-            $('.amount').hide(300);
+            $('.amount').css("opacity", "0");
         }
     })
 
