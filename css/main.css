@@ -450,10 +450,7 @@ input[type='text'],input[type='password'],input[type='number'],input[type='email
 }
 /*add-new-invoice page*/
 .add-new-invoice .form-group label{width: auto;}
-.pay-method .money{
-    display: none;
-}
 
-.amount{
-    display: none;
+.pay-method .money,.amount{
+    opacity: 0;    
 }
