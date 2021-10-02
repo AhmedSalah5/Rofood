@@ -453,3 +453,7 @@ input[type='text'],input[type='password'],input[type='number'],input[type='email
 .pay-method .money{
     display: none;
 }
+
+.amount{
+    display: none;
+}
