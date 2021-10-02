@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rofood-Invoices</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Icofont -->
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="top-nav">
+            <div class="col-2">
+            </div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="d-flex align-items-center">
+                            <h2>متجر أبصار الذهبية</h2>
+                            <div class="me-3 h-100 d-flex align-items-center">
+                                <span class="icon ms-2 color-blue"><i class="bi bi-geo-alt"></i></span>
+                                <span>فرع المحمدية</span>
+                            </div>                          
+                        </div>                       
+                    </div>
+                    <div class="col-5 d-flex align-items-center justify-content-end ps-4">
+
+                        <a href="#" class="position-relative text-secondary">
+                            <img src="images/person1.jpg" width="40" class="rounded-circle" alt="">
+                            أحمد علي
+                            <span style="top:5px" class="position-absolute  start-100 translate-middle p-2 bg-primary border border-light rounded-circle">
+                              <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </a>
+
+                        <span class="mx-2" id="dateTime"></span>
+
+                        <a href="" class="position-relative me-2 ms-3">
+                            <span class="icon color-blue"><i class="bi bi-envelope"></i></span>
+                            <span class="position-absolute translate-middle badge rounded-pill bg-secondary">5 <span class="visually-hidden">unread messages</span></span>
+                            </span>
+                        </a>
+                        <a href="" class="position-relative me-3">
+                            <span class="icon color-blue"><i class="bi bi-bell"></i></span>
+                            <span class="position-absolute translate-middle badge rounded-pill bg-secondary">5 <span class="visually-hidden">unread alerts</span></span>
+                        </a>
+                    </div>
+                </div>               
+            </div>
+    </nav>   <!-- End Top Nav -->
+
+    <!-- Start Side Nav -->
+    <nav class="side-nav">
+        <div class="logo"><img src="images/logo.png" alt="rofood_logo"></div>
+        <ul class="menu">
+            <li><a class="active" href="index.html"><span class="icon"><i class="fa fa-home"></i></span>الواجهة الرئيسية</a></li>
+            <li><a><span class="icon"><i class="bi bi-journal-bookmark"></i></span>المبيعات</a></li>
+            <li><a><span class="icon"><i class="bi bi-file-earmark-text"></i></span>التقارير</a></li>
+            <li><a><span class="icon"><i class="fa fa-battery-full"></i></span>المخزون</a></li>
+            <li><a><span class="icon"><i class="fa fa-shopping-cart"></i></span>المشتريات</a></li>
+            <li><a><span class="icon"><i class="bi bi-clipboard-data"></i></span>الكاشير</a></li>
+            <li><a><span class="icon"><i class="fa fa-cog"></i></span>الإعدادات</a></li>
+            <li><a><span class="icon"><i class="bi bi-shield-check"></i></span>الدعم الفني</a></li>
+            
+        </ul>
+    </nav> <!-- End Side Nav -->
+
+    <!-- Start Content -->
+    <div class="content add-new-emp"> 
+        <h3 class="text-center fw-bold mb-3">عرض التقارير</h3> 
+        <div class="box px-4">
+            <h3>البحث</h3>
+            <form action="">
+                <div class="row">
+                    <div class="col-md-5 pt-3">
+                        <div class="form-group d-flex align-items-center">
+                            <label for="" class="fs-6 ms-3">رقم الجوال - التقرير</label>
+                            <input type="text" class="form-control" placeholder="رقم الجوال - التقرير">
+                        </div>
+                    </div>
+                    <div class="col-md-4 pt-3">
+                        <div class="form-group d-flex align-items-center">
+                            <label for="" class="fs-6 ms-3">نوع التقرير</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">النوع1</option>
+                                <option value="">النوع2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-3">
+                        <div class="form-group text-start">
+                            <input type="submit" class="btn btn-main me-auto" value="بحث">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+        <div class="box">
+            <div class="table-responsive">
+                <table class="table align-middle text-center fs-6">
+                    <thead class="table-light">
+                        <tr>
+                            <th>رقم التقرير</th>
+                            <th>التاريخ</th>
+                            <th>الحالة</th>
+                            <th>العميل</th>
+                            <th>المبلغ الإجمالي</th>
+                            <th>المبلغ المتبقي للاستكمال</th>
+                            <th>سعر البيع</th>
+                            <th>عمليات</th>
+                        </tr>
+                    </thead>
+                    <tbody class="fw-bolder">
+                        <tr>
+                            <td>88286385</td>
+                            <td>2021-09-22 22:33:27</td>
+                            <td>معلقة</td>
+                            <td>44</td>
+                            <td>90.00</td>
+                            <td>0</td>
+                            <td>90.00</td>
+                            <td>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="fa fa-eye "></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="bi bi-printer-fill"></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="icofont-pie-chart icofont-1x"></i></a>
+                                <a href="" class="text-danger fs-5 m-2"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>88286385</td>
+                            <td>2021-09-22 22:33:27</td>
+                            <td>معلقة</td>
+                            <td>44</td>
+                            <td>90.00</td>
+                            <td>0</td>
+                            <td>90.00</td>
+                            <td>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="fa fa-eye "></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="bi bi-printer-fill"></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="icofont-pie-chart icofont-1x"></i></a>
+                                <a href="" class="text-danger fs-5 m-2"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>88286385</td>
+                            <td>2021-09-22 22:33:27</td>
+                            <td>معلقة</td>
+                            <td>44</td>
+                            <td>90.00</td>
+                            <td>0</td>
+                            <td>90.00</td>
+                            <td>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="fa fa-eye "></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="bi bi-printer-fill"></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="icofont-pie-chart icofont-1x"></i></a>
+                                <a href="" class="text-danger fs-5 m-2"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>88286385</td>
+                            <td>2021-09-22 22:33:27</td>
+                            <td>معلقة</td>
+                            <td>44</td>
+                            <td>90.00</td>
+                            <td>0</td>
+                            <td>90.00</td>
+                            <td>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="fa fa-eye "></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="bi bi-printer-fill"></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="icofont-pie-chart icofont-1x"></i></a>
+                                <a href="" class="text-danger fs-5 m-2"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>88286385</td>
+                            <td>2021-09-22 22:33:27</td>
+                            <td>معلقة</td>
+                            <td>44</td>
+                            <td>90.00</td>
+                            <td>0</td>
+                            <td>90.00</td>
+                            <td>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="fa fa-eye "></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="bi bi-printer-fill"></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="icofont-pie-chart icofont-1x"></i></a>
+                                <a href="" class="text-danger fs-5 m-2"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>88286385</td>
+                            <td>2021-09-22 22:33:27</td>
+                            <td>معلقة</td>
+                            <td>44</td>
+                            <td>90.00</td>
+                            <td>0</td>
+                            <td>90.00</td>
+                            <td>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="fa fa-eye "></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="bi bi-printer-fill"></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="icofont-pie-chart icofont-1x"></i></a>
+                                <a href="" class="text-danger fs-5 m-2"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>88286385</td>
+                            <td>2021-09-22 22:33:27</td>
+                            <td>معلقة</td>
+                            <td>44</td>
+                            <td>90.00</td>
+                            <td>0</td>
+                            <td>90.00</td>
+                            <td>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="fa fa-eye "></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="bi bi-printer-fill"></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="icofont-pie-chart icofont-1x"></i></a>
+                                <a href="" class="text-danger fs-5 m-2"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>88286385</td>
+                            <td>2021-09-22 22:33:27</td>
+                            <td>معلقة</td>
+                            <td>44</td>
+                            <td>90.00</td>
+                            <td>0</td>
+                            <td>90.00</td>
+                            <td>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="fa fa-eye "></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="bi bi-printer-fill"></i></a>
+                                <a href="" class="text-secondary fs-5 m-2"><i class="icofont-pie-chart icofont-1x"></i></a>
+                                <a href="" class="text-danger fs-5 m-2"><i class="fa fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>    
+        
+        
+    </div>
+    
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+
+    
+
+
+</body>
+</html>
