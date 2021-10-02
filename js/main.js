@@ -34,7 +34,7 @@ $(document).ready(function () {
         }
     })
 
-    //
+    //Show value input if check payment method
     $('.pay-method input[type="checkbox"]').on('click', function () {
 
         if ($(this).prop("checked") == true) {
@@ -42,6 +42,16 @@ $(document).ready(function () {
             console.log($(this).attr('id'));
         } else {
             $(this).parent().find('.money').hide(300);
+        }
+    })
+
+    //Show Value input in Buy-invoice page
+    $('#payment-method').on('change', function () {
+        var x = $('#payment-method').val();
+        if (x === "cash")
+            $('.amount').show(300);
+        else {
+            $('.amount').hide(300);
         }
     })
 
