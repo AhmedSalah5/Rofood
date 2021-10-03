@@ -212,151 +212,552 @@
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                      الوصفة الإضافية
-                    </button>
-                  </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="box">
-                            <h5 class="mb-3">إنشاء وصفة طبية</h5>
-                            <form action="" class="row add-recipe">
-                                <div class="col-12">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered align-middle">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <label>الباركود</label>
-                                                        <input type="text"/>
-                                                    </td>
-                                                    <td>
-                                                        <label>الاسم</label>
-                                                        <input type="text"/>
-                                                    </td>
-                                                    <td>
-                                                        <label>السعر</label>
-                                                        <input type="text"/>
-                                                    </td>
-                                                    <td>
-                                                        <label>الكمية</label>
-                                                        <input type="text"/>
-                                                    </td>
-                                                    <td>
-                                                        <label>تم التسليم</label>
-                                                        <input type="text"/>
-                                                    </td>
-                                                    <td>
-                                                        <a href="" class="text-danger"><i class="fa fa-trash fa-2x"></i></a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-sm-4">
-                                    <div class="form-group">
-                                        <label for="" class="text-start">المجموع</label>
-                                        <input type="number" class="form-control w-100">
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-sm-4">
-                                    <div class="form-group">
-                                        <label for="" class="text-start">الضريبة</label>
-                                        <input type="number" class="form-control w-100">
-                                    </div>                                   
-                                </div>
-                                <div class="col-md-2 col-sm-4">
-                                    <div class="form-group">
-                                        <label for="" class="text-start">الخصم</label>
-                                        <input type="number" class="form-control w-100">
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-sm-4">
-                                    <div class="form-group">
-                                        <label for="" class="text-start">مبلغ الدفع</label>
-                                        <input type="number" class="form-control w-100">
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-sm-4">
-                                    <div class="form-group">
-                                        <label for="" class="text-start">المبلغ الإجمالي</label>
-                                        <input type="number" class="form-control w-100">
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-sm-4">
-                                    <div class="form-group">
-                                        <label for="" class="text-start">الحد الأدنى للدفع</label>
-                                        <input type="number" min="0" value="0" class="form-control w-100">
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="" class="text-start">%الخصم (الحد الاقصى 100)</label>
-                                        <input type="number" min="0" max="100" value="0" class="form-control w-100">
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="" class="text-start">الخصم بالقيمة</label>
-                                        <input type="number" class="form-control w-100">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label for="" class="text-start">طريقة الدفع</label>
-                                        <div class="">
-                                            <div class="pay-method my-2">
-                                                <input type="checkbox" name="" id="cash">
-                                                <label for="cash" class="mx-2">كاش</label>
-                                                <br>
-                                                <input type="text" class="form-control money" placeholder="ادخل المبلغ">                                           
-                                            </div>
-                                            <div class="pay-method my-2">
-                                                <input type="checkbox" name="" id="card">
-                                                <label for="card" class="mx-2">بطاقة</label>
-                                                <br> 
-                                                <input type="text" class="form-control money" placeholder="ادخل المبلغ">    
-                                            </div>
-                                            <div class="pay-method my-2">
-                                                <input type="checkbox" name="" id="stc-pay">
-                                                <label for="stc-pay" class="mx-2">STC Pay</label> 
-                                                <br>
-                                                <input type="text" class="form-control money" placeholder="ادخل المبلغ">                                              
-                                            </div>
-                                            <div class="pay-method my-2">
-                                                <input type="checkbox" name="" id="vcah">
-                                                <label for="vcah" class="mx-2">فودافون كاش</label>
-                                                <br>
-                                                <input type="text" class="form-control money" placeholder="ادخل المبلغ">                                                
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                
-                        
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label for="" class="text-start">ملاحظة خاصة</label>
-                                        <textarea name="" id="" class="form-control" rows="3"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group text-end">
-                                        <button class="btn btn-main mx-3">تأكيد</button>
-                                        <button class="btn btn-green mx-3">حفظ</button>
-                                        <button class="btn btn-red">إلغاء</button>  
-                                    </div>
-                                </div>
-                            </form>
+            </div>
+
+            <!-- Dropdown recipes -->
+            <div class="dropdown additional my-3">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    الوصفات الإضافية
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                  <li class="dropdown-item" data-target=".recipe1">وصفة جديدة 1</li>
+                  <li class="dropdown-item" data-target=".recipe2">وصفة جديدة 2</li>
+                  <li class="dropdown-item" data-target=".recipe3">وصفة جديدة 3</li>
+                  <li class="dropdown-item" data-target=".recipe4">وصفة جديدة 4</li>
+                  <li class="dropdown-item" data-target=".recipe5">وصفة جديدة 5</li>
+                </ul>
+              </div>
+
+              <div class="box recipe1">
+                <h5 class="mb-3">إنشاء وصفة طبية</h5>
+                <form action="" class="add-recipe">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group d-flex align-items-center">
+                                <label for="" class="fs-6 ms-3">اسم الوصفة</label>
+                                <input type="text" class="form-control" placeholder="أدخل الاسم . . .">
+                            </div>
                         </div>
                     </div>
-                  </div>
-                </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle" style="direction: ltr;">
+                            <tbody>
+                                <tr>
+                                    <th>EYE</th>
+                                    <th>SPH</th>
+                                    <th>CYL</th>
+                                    <th>Axis</th>
+                                    <th>ADD</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        RIGHT
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        LEFT
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+
+                                    </th>
+                                    <td>
+
+                                    </td>
+                                    <th>
+                                        IPD
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                </form>
               </div>
+              <div class="box recipe2">
+                <h5 class="mb-3">إنشاء وصفة طبية</h5>
+                <form action="" class="add-recipe">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group d-flex align-items-center">
+                                <label for="" class="fs-6 ms-3">اسم الوصفة</label>
+                                <input type="text" class="form-control" placeholder="أدخل الاسم . . .">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle" style="direction: ltr;">
+                            <tbody>
+                                <tr>
+                                    <th>EYE</th>
+                                    <th>SPH</th>
+                                    <th>CYL</th>
+                                    <th>Axis</th>
+                                    <th>ADD</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        RIGHT
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        LEFT
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+
+                                    </th>
+                                    <td>
+
+                                    </td>
+                                    <th>
+                                        IPD
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                </form>
+              </div>
+              <div class="box recipe3">
+                <h5 class="mb-3">إنشاء وصفة طبية</h5>
+                <form action="" class="add-recipe">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group d-flex align-items-center">
+                                <label for="" class="fs-6 ms-3">اسم الوصفة</label>
+                                <input type="text" class="form-control" placeholder="أدخل الاسم . . .">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle" style="direction: ltr;">
+                            <tbody>
+                                <tr>
+                                    <th>EYE</th>
+                                    <th>SPH</th>
+                                    <th>CYL</th>
+                                    <th>Axis</th>
+                                    <th>ADD</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        RIGHT
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        LEFT
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+
+                                    </th>
+                                    <td>
+
+                                    </td>
+                                    <th>
+                                        IPD
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                </form>
+              </div>
+              <div class="box recipe4">
+                <h5 class="mb-3">إنشاء وصفة طبية</h5>
+                <form action="" class="add-recipe">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group d-flex align-items-center">
+                                <label for="" class="fs-6 ms-3">اسم الوصفة</label>
+                                <input type="text" class="form-control" placeholder="أدخل الاسم . . .">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle" style="direction: ltr;">
+                            <tbody>
+                                <tr>
+                                    <th>EYE</th>
+                                    <th>SPH</th>
+                                    <th>CYL</th>
+                                    <th>Axis</th>
+                                    <th>ADD</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        RIGHT
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        LEFT
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+
+                                    </th>
+                                    <td>
+
+                                    </td>
+                                    <th>
+                                        IPD
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                </form>
+              </div>
+              <div class="box recipe5">
+                <h5 class="mb-3">إنشاء وصفة طبية</h5>
+                <form action="" class="add-recipe">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group d-flex align-items-center">
+                                <label for="" class="fs-6 ms-3">اسم الوصفة</label>
+                                <input type="text" class="form-control" placeholder="أدخل الاسم . . .">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle" style="direction: ltr;">
+                            <tbody>
+                                <tr>
+                                    <th>EYE</th>
+                                    <th>SPH</th>
+                                    <th>CYL</th>
+                                    <th>Axis</th>
+                                    <th>ADD</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        RIGHT
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        LEFT
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        <input type="text"/>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+
+                                    </th>
+                                    <td>
+
+                                    </td>
+                                    <th>
+                                        IPD
+                                    </th>
+                                    <td>
+                                        <input type="text" value="0.00"/>
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                </form>
+              </div>
+
+
+
+
+
+
+
+
+
+            <div class="box">
+                <h5 class="mb-3">إنشاء وصفة طبية</h5>
+                <form action="" class="row add-recipe">
+                    <div class="col-12">
+                        <table style="min-width: 50%;" class=" table-bordered align-middle">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label>الباركود</label>
+                                        <input style="width: 100px;" type="text"/>
+                                    </td>
+                                    <td>
+                                        <label>الاسم</label>
+                                        <input style="width: 200px;" type="text"/>
+                                    </td>
+                                    <td>
+                                        <label>السعر</label>
+                                        <input type="text"/>
+                                    </td>
+                                    <td>
+                                        <label>الكمية</label>
+                                        <input type="text"/>
+                                    </td>
+                                    <td>
+                                        <label>تم التسليم</label>
+                                        <input type="text"/>
+                                    </td>
+                                    <td>
+                                        <a href="" class="text-danger"><i class="fa fa-trash fa-lg"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="col-12">
+                        <div class="col-md-2 col-sm-4">
+                            <div class="form-group">
+                                <label for="" class="text-start">المجموع</label>
+                                <input type="number" class="form-control w-100">
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <div class="form-group">
+                                <label for="" class="text-start">الضريبة</label>
+                                <input type="number" class="form-control w-100">
+                            </div>                                   
+                        </div>
+                        <div class="col-md-2 col-sm-4">
+                            <div class="form-group">
+                                <label for="" class="text-start">الخصم</label>
+                                <input type="number" class="form-control w-100">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-2 col-sm-4">
+                            <div class="form-group">
+                                <label for="" class="text-start">الحد الأدنى للدفع</label>
+                                <input type="number" min="0" value="0" class="form-control w-100">
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-2 col-sm-4">
+                        <div class="form-group">
+                            <label for="" class="text-start fs-6">%الخصم (الأقصى 100)</label>
+                            <input type="number" min="0" max="100" value="0" class="form-control w-100">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="form-group">
+                            <label for="" class="text-start fs-6">الخصم بالقيمة</label>
+                            <input type="number" class="form-control w-100">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="form-group">
+                            <label for="" class="text-start">المبلغ الإجمالي</label>
+                            <input type="number" class="form-control w-100">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="" class="text-start">طريقة الدفع</label>
+                            <div class="">
+                                <div class="pay-method my-2">
+                                    <input type="checkbox" name="" id="cash">
+                                    <label for="cash" class="mx-2">كاش</label>
+                                    <br>
+                                    <input type="text" class="form-control money" placeholder="ادخل المبلغ">                                           
+                                </div>
+                                <div class="pay-method my-2">
+                                    <input type="checkbox" name="" id="card">
+                                    <label for="card" class="mx-2">بطاقة</label>
+                                    <br> 
+                                    <input type="text" class="form-control money" placeholder="ادخل المبلغ">    
+                                </div>
+                                <div class="pay-method my-2">
+                                    <input type="checkbox" name="" id="stc-pay">
+                                    <label for="stc-pay" class="mx-2">STC Pay</label> 
+                                    <br>
+                                    <input type="text" class="form-control money" placeholder="ادخل المبلغ">                                              
+                                </div>
+                                <div class="pay-method my-2">
+                                    <input type="checkbox" name="" id="vcah">
+                                    <label for="vcah" class="mx-2">فودافون كاش</label>
+                                    <br>
+                                    <input type="text" class="form-control money" placeholder="ادخل المبلغ">                                                
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+            
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="" class="text-start">ملاحظة خاصة</label>
+                            <textarea name="" id="" class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group text-end">
+                            <button class="btn btn-main mx-3">تأكيد</button>
+                            <button class="btn btn-green mx-3">حفظ</button>
+                            <button class="btn btn-red">إلغاء</button>  
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>    
         
         
