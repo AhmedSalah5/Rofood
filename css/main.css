@@ -454,3 +454,28 @@ input[type='text'],input[type='password'],input[type='number'],input[type='email
 .pay-method .money,.amount{
     opacity: 0;    
 }
+.additional ul{
+    padding: 0;
+}
+.additional button{
+    width: 160px;
+    background: #001BB7;
+    color: #fff;
+}
+.additional button:hover{
+    background: #1737ee;
+    color: #fff;
+}
+.additional li{
+    background: #001BB7;
+    color: #fff;
+    min-width: 160px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    border-radius: 4px;   
+}
+.additional li:hover{
+    background: #1737ee;
+    color: #fff;
+}
+.box.recipe1,.box.recipe2,.box.recipe3,.box.recipe4,.box.recipe5{display: none;}
