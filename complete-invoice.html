@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
     <!-- Icofont -->
     <link rel="stylesheet" href="css/icofont.min.css">
     <!-- Main Style -->
@@ -20,43 +21,52 @@
 <body>
     <!-- Top Navbar -->
     <nav class="top-nav">
-            <div class="col-2">
-            </div>
-            <div class="col-10">
-                <div class="row">
-                    <div class="col-7">
-                        <div class="d-flex align-items-center">
-                            <h2>متجر أبصار الذهبية</h2>
-                            <div class="me-3 h-100 d-flex align-items-center">
-                                <span class="icon ms-2 color-blue"><i class="bi bi-geo-alt"></i></span>
-                                <span>فرع المحمدية</span>
-                            </div>                          
-                        </div>                       
-                    </div>
-                    <div class="col-5 d-flex align-items-center justify-content-end ps-4">
+        <div class="col-2">
+        </div>
+        <div class="col-10">
+            <div class="row">
+                <div class="col-7">
+                    <div class="d-flex align-items-center">
+                        <h2>متجر أبصار الذهبية</h2>
+                        <div class="me-3 h-100 d-flex align-items-center">
+                            <span class="icon ms-2 color-blue"><i class="bi bi-geo-alt"></i></span>
+                            <span>فرع المحمدية</span>
+                        </div>                          
+                    </div>                       
+                </div>
+                <div class="col-5 d-flex align-items-center justify-content-end ps-4">
+                    <span class="mx-2" id="dateTime"></span>
 
-                        <a href="#" class="position-relative text-secondary">
+                    <a href="" class="position-relative me-2">
+                        <span class="icon color-blue"><i class="bi bi-envelope"></i></span>
+                        <span class="position-absolute translate-middle badge rounded-pill bg-secondary">5 <span class="visually-hidden">unread messages</span></span>
+                        </span>
+                    </a>
+                    <a href="" class="position-relative me-3 ms-3">
+                        <span class="icon color-blue"><i class="bi bi-bell"></i></span>
+                        <span class="position-absolute translate-middle badge rounded-pill bg-secondary">5 <span class="visually-hidden">unread alerts</span></span>
+                    </a>
+
+
+                      <div class="dropdown user-dropdown me-3">
+                        <a class="dropdown-toggle text-secondary" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="images/person1.jpg" width="40" class="rounded-circle" alt="">
                             أحمد علي
-                            <span style="top:5px" class="position-absolute  start-100 translate-middle p-2 bg-primary border border-light rounded-circle">
-                              <span class="visually-hidden">New alerts</span>
-                            </span>
                         </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">الحساب</a></li>
+                          <li><a class="dropdown-item" href="#">الإعدادات</a></li>
+                          <li><a class="dropdown-item" href="#">تبديل الفروع</a></li>
+                          <hr>
+                          <li><a class="dropdown-item color-red" href="#">تسجيل الخروج</a></li>
+                        </ul>
+                      </div>
 
-                        <span class="mx-2" id="dateTime"></span>
 
-                        <a href="" class="position-relative me-2 ms-3">
-                            <span class="icon color-blue"><i class="bi bi-envelope"></i></span>
-                            <span class="position-absolute translate-middle badge rounded-pill bg-secondary">5 <span class="visually-hidden">unread messages</span></span>
-                            </span>
-                        </a>
-                        <a href="" class="position-relative me-3">
-                            <span class="icon color-blue"><i class="bi bi-bell"></i></span>
-                            <span class="position-absolute translate-middle badge rounded-pill bg-secondary">5 <span class="visually-hidden">unread alerts</span></span>
-                        </a>
-                    </div>
-                </div>               
-            </div>
+                </div>
+            </div>               
+        </div>
     </nav>   <!-- End Top Nav -->
 
     <!-- Start Side Nav -->
@@ -76,108 +86,77 @@
     </nav> <!-- End Side Nav -->
 
     <!-- Start Content -->
-    <div class="content add-new-emp"> 
+    <div class="content complete-invoice"> 
         <h3 class="text-center fw-bold mb-3">استكمال فاتورة معلقة</h3> 
-        <div class="box px-3">
-            <form action="" class="add-recipe">              
-                <div class="table-responsive my-3">
-                    <table class="table table-bordered align-middle">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <label>الباركود</label>
-                                    <input type="text" value="600600"/>
-                                </td>
-                                <td>
-                                    <label>الاسم</label>
-                                    <input type="text" value="إطار طبي"/>
-                                </td>
-                                <td>
-                                    <label>السعر</label>
-                                    <input type="text" value="40"/>
-                                </td>
-                                <td>
-                                    <label>الكمية</label>
-                                    <input type="text" value="1"/>
-                                </td>
-                                <td>
-                                    <label>تم التسليم</label>
-                                    <input type="text" value="0"/>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-responsive my-3">
-                    <table class="table table-bordered align-middle">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <label>المبلغ الإجمالي</label>
-                                    <input type="text" value="600600"/>
-                                </td>
-                                <td>
-                                    <label>كاش</label>
-                                    <input type="text" value="عدسات"/>
-                                </td>
-                                <td>
-                                    <label>بطاقة</label>
-                                    <input type="text" value="40"/>
-                                </td>
-                                <td>
-                                    <label>Stc-Pay</label>
-                                    <input type="text" value="1"/>
-                                </td>
-                                <td>
-                                    <label>الخصم</label>
-                                    <input type="text" value="0"/>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="table-responsive my-3">
-                    <table class="table table-bordered align-middle">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <label>حالة الفاتورة</label>
-                                    <input type="text" value="معلقة"/>
-                                </td>
-                                <td>
-                                    <label>الوصفة</label>
-                                    <input type="text" value="الوصفة الأساسية"/>
-                                </td>
-                                <td>
-                                    <label>العميل</label>
-                                    <input type="text" value="40"/>
-                                </td>
-                                <td>
-                                    <label>جوال</label>
-                                    <input type="text" value="012412152444"/>
-                                </td>
-                                <td>
-                                    <label>موظف البيع</label>
-                                    <input type="text" value="اسم الموظف"/>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>           
-                <div class="form-group w-100">
-                    <label for="" class="text-end">ملاحظة خاصة</label>
-                    <textarea name="" id="" class="form-control" rows="3">
-هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                    </textarea>
-                </div>
-                <div class="form-group w-100 text-start">
-                    <button class="btn btn-green mx-3">تعديل</button>
-                    <button class="btn btn-red">إلغاء</button>  
-                </div>
-            </form>
-        </div>        
-        
+        <h5>تفاصيل الفاتورة <span>01/10/2021</span> - <span class="bg-success text-white px-2">0221112</span></h5>
+        <div class="box">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="table-responsive mb-3">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Barcode</th>
+                                    <th>الاسم</th>
+                                    <th>السعر</th>
+                                    <th>الكمية</th>
+                                    <th>تم تسليمها</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>600600</td>
+                                    <td>اطار طبي ريبان 4125 اسود</td>
+                                    <td>50.00</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div> 
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>المبلغ الإجمالي</th>
+                            <th>كاش</th>
+                            <th>بطاقة</th>
+                            <th>stc-pay</th>
+                            <th>فودافون كاش</th>
+                            <th>تحويل بنكي</th>
+                            <th>الخصم</th>
+                            <th>حالة الفاتورة</th>
+                            <th>الوصفة الطبية</th>
+                            <th>العميل</th>
+                            <th>جوال العميل</th>
+                            <th>التاريخ</th>
+                            <th>موظف البيع	</th>
+                            <th>ملاحظة خاصة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>50.00</td>
+                            <td>50.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>لا يوجد</td>
+                            <td>معلقة</td>
+                            <td>الوصفة الاساسية</td>
+                            <td>customer-6VHVP	</td>
+                            <td>656</td>
+                            <td>2021-10-01 17:41:00	</td>
+                            <td>تجريبي</td>
+                            <td>لا يوجد</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>       
     </div>
     
 
@@ -186,8 +165,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/main.js"></script>
-
-    
 
 
 </body>
