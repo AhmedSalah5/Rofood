@@ -172,6 +172,7 @@ input[type='text'],input[type='password'],input[type='number'],input[type='email
 .top-nav .user-dropdown ul{
     min-width: 8.5rem;
     transform: translate(0px, 40px)!important;
+    text-align: center;
 }
 
 /*side-nav*/

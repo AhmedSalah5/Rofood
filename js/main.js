@@ -7,6 +7,8 @@ $(document).ready(function () {
 
 
 
+
+
     //Date & Time
     function showTime() {
         const date = new Date();
@@ -51,7 +53,8 @@ $(document).ready(function () {
             $('.amount').css("opacity", "0");
         }
     })
-    
+
+
     //Additional Recipes
     $('.additional li').on('click', function () {
         var target = $(this).data('target');

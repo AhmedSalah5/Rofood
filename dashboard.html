@@ -34,26 +34,38 @@
                         </div>                       
                     </div>
                     <div class="col-5 d-flex align-items-center justify-content-end ps-4">
-
-                        <a href="#" class="position-relative text-secondary">
-                            <img src="images/person1.jpg" width="40" class="rounded-circle" alt="">
-                            أحمد علي
-                            <span style="top:5px" class="position-absolute  start-100 translate-middle p-2 bg-primary border border-light rounded-circle">
-                              <span class="visually-hidden">New alerts</span>
-                            </span>
-                        </a>
-
                         <span class="mx-2" id="dateTime"></span>
 
-                        <a href="" class="position-relative me-2 ms-3">
+                        <a href="" class="position-relative me-2">
                             <span class="icon color-blue"><i class="bi bi-envelope"></i></span>
                             <span class="position-absolute translate-middle badge rounded-pill bg-secondary">5 <span class="visually-hidden">unread messages</span></span>
                             </span>
                         </a>
-                        <a href="" class="position-relative me-3">
+                        <a href="" class="position-relative me-3 ms-3">
                             <span class="icon color-blue"><i class="bi bi-bell"></i></span>
                             <span class="position-absolute translate-middle badge rounded-pill bg-secondary">5 <span class="visually-hidden">unread alerts</span></span>
                         </a>
+
+
+                          <div class="dropdown user-dropdown me-3">
+                            <a class="dropdown-toggle text-secondary" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/person1.jpg" width="40" class="rounded-circle" alt="">
+                                أحمد علي
+                                <span style="top:5px" class="position-absolute  start-100 translate-middle p-2 bg-primary border border-light rounded-circle">
+                                  <span class="visually-hidden">New alerts</span>
+                                </span>
+                            </a>
+                          
+                            <ul class="dropdown-menu text-end" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">الحساب</a></li>
+                              <li><a class="dropdown-item" href="#">الإعدادات</a></li>
+                              <li><a class="dropdown-item" href="#">تبديل الفروع</a></li>
+                              <hr>
+                              <li><a class="dropdown-item color-red" href="#">تسجيل الخروج</a></li>
+                            </ul>
+                          </div>
+
+
                     </div>
                 </div>               
             </div>
@@ -81,6 +93,9 @@
                 <div class="col-12">
                     <!-- Chart -->
                     <div class="chart">
+                        <select class="select" name="" id="">
+                            <option value="">--from-to--</option>
+                        </select>
                         <canvas id="myChart" style="max-height: 100%;"></canvas>
                     </div>
                 </div>
