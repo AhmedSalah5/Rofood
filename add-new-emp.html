@@ -16,24 +16,24 @@
     <link rel="stylesheet" href="css/icofont.min.css">
     <!-- Main Style -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <!-- Top Navbar -->
-    <nav class="top-nav">
-        <div class="col-2">
-        </div>
-        <div class="col-10">
-            <div class="row">
-                <div class="col-7">
-                    <div class="d-flex align-items-center">
-                        <h2>متجر أبصار الذهبية</h2>
-                        <div class="me-3 h-100 d-flex align-items-center">
-                            <span class="icon ms-2 color-blue"><i class="bi bi-geo-alt"></i></span>
-                            <span>فرع المحمدية</span>
-                        </div>                          
-                    </div>                       
-                </div>
-                <div class="col-5 d-flex align-items-center justify-content-end ps-4">
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg top-nav">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <h2>متجر أبصار الذهبية</h2>
+                <div class="me-3 h-100 d-flex align-items-center">
+                    <span class="icon ms-2 color-blue"><i class="bi bi-geo-alt"></i></span>
+                    <span>فرع المحمدية</span>
+                </div> 
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="color-main"><i class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="d-flex align-items-center top-nav-content">
                     <span class="mx-2" id="dateTime"></span>
 
                     <a href="" class="position-relative me-2">
@@ -45,26 +45,40 @@
                         <span class="icon color-blue"><i class="bi bi-bell"></i></span>
                         <span class="position-absolute translate-middle badge rounded-pill bg-secondary">5 <span class="visually-hidden">unread alerts</span></span>
                     </a>
-                    <div class="dropdown user-dropdown me-3">
-                        <a class="dropdown-toggle text-secondary" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="images/person1.jpg" width="40" class="rounded-circle" alt="">
-                            أحمد علي
-                        </a>
-                        
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-secondary dropdown-toggle" href="#" id="navbarDropdown0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="icon color-blue"><i class="bi bi-globe2"></i></span>  
+                            </a>
+                            <ul class="dropdown-menu text-end" aria-labelledby="navbarDropdown0">
+                                <li><a class="dropdown-item ar" href="#">عربي</a></li>
+                                <li><a class="dropdown-item en" href="#">English</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-secondary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/person1.jpg" width="40" class="rounded-circle" alt="">
+                            أحمد علي    
+                            </a>
+                            <ul class="dropdown-menu text-end" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">الحساب</a></li>
                             <li><a class="dropdown-item" href="#">الإعدادات</a></li>
                             <li><a class="dropdown-item" href="#">تبديل الفروع</a></li>
-                            <hr>
+                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item color-red" href="#">تسجيل الخروج</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>               
+                            </ul>
+                        </li>
+                    </ul>
+                </div>         
+          </div>
         </div>
-    </nav>   <!-- End Top Nav -->
+    </nav>
+
     <!-- Start Side Nav -->
     <nav class="side-nav">
+        <div class="side-nav-toggler">
+            <i class="bi bi-layout-text-sidebar"></i>
+        </div>
         <div class="logo"><img src="images/logo.png" alt="rofood_logo"></div>
         <ul class="menu">
             <li><a class="active" href="index.html"><span class="icon"><i class="fa fa-home"></i></span>الواجهة الرئيسية</a></li>
@@ -113,9 +127,9 @@
                     <div>منح/سحب</div>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch0" checked>
+                <div class="form-check form-switch">                  
                     <label class="form-check-label" for="Switch0">لوحة تحكم مالك مخزن</label>
+                    <input class="form-check-input" type="checkbox" id="Switch0" checked>
                 </div>               
             </div>
             <!-- الصلاحيات -->
@@ -133,63 +147,63 @@
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch1" checked>
                     <label class="form-check-label" for="Switch1">إيداع في الكاشير</label>
+                    <input class="form-check-input" type="checkbox" id="Switch1" checked>
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch2" checked>
                     <label class="form-check-label" for="Switch2">سحب من الكاشير</label>
+                    <input class="form-check-input" type="checkbox" id="Switch2" checked>                  
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch3" checked>
                     <label class="form-check-label" for="Switch3">إغلاق الكاشير</label>
+                    <input class="form-check-input" type="checkbox" id="Switch3" checked>                   
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch4" checked>
                     <label class="form-check-label" for="Switch4">رؤية عدد المنتجات</label>
+                    <input class="form-check-input" type="checkbox" id="Switch4" checked>                   
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch5" checked>
                     <label class="form-check-label" for="Switch5">رؤية عدد الموظفين</label>
+                    <input class="form-check-input" type="checkbox" id="Switch5" checked>                   
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch6" checked>
                     <label class="form-check-label" for="Switch6">مشاهدة رصيد الخزينة</label>
+                    <input class="form-check-input" type="checkbox" id="Switch6" checked>                  
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch7" checked>
                     <label class="form-check-label" for="Switch7">مشاهدة سعر التكلفة</label>
+                    <input class="form-check-input" type="checkbox" id="Switch7" checked>                   
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch8" checked>
                     <label class="form-check-label" for="Switch8">لوحة فواتير اليوم</label>
+                    <input class="form-check-input" type="checkbox" id="Switch8" checked>                   
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch9" checked>
                     <label class="form-check-label" for="Switch9">لوحة فواتير الشهر</label>
+                    <input class="form-check-input" type="checkbox" id="Switch9" checked>                   
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch10" checked>
+                <div class="form-check form-switch">                  
                     <label class="form-check-label" for="Switch10">لوحة نظام الأموال للمبيعات</label>
+                    <input class="form-check-input" type="checkbox" id="Switch10" checked>
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch11" checked>
                     <label class="form-check-label" for="Switch11">لوحة نظام الأموال للمشتريات</label>
+                    <input class="form-check-input" type="checkbox" id="Switch11" checked>                   
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch12" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch12">لوحة مبيعات الشهر</label>
+                    <input class="form-check-input" type="checkbox" id="Switch12" checked>
                 </div>
             </div>
             <!-- الشراء -->
@@ -207,58 +221,58 @@
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch1" checked>
                     <label class="form-check-label" for="Switch1">المخزون</label>
+                    <input class="form-check-input" type="checkbox" id="Switch1" checked>                   
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch2" checked>
                     <label class="form-check-label" for="Switch2">إدخال بضاعة للمخزون</label>
+                    <input class="form-check-input" type="checkbox" id="Switch2" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch3" checked>
+                <div class="form-check form-switch">                  
                     <label class="form-check-label" for="Switch3">استيراد ملف excel</label>
+                    <input class="form-check-input" type="checkbox" id="Switch3" checked>
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch4" checked>
                     <label class="form-check-label" for="Switch4">المشتريات</label>
+                    <input class="form-check-input" type="checkbox" id="Switch4" checked>                   
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch5" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch5">إنشاء فاتورة مشتريات</label>
+                    <input class="form-check-input" type="checkbox" id="Switch5" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch6" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch6">دفع فاتورة مورد</label>
+                    <input class="form-check-input" type="checkbox" id="Switch6" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch7" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch7">إضافة منتج مشتريات</label>
+                    <input class="form-check-input" type="checkbox" id="Switch7" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch8" checked>
+                <div class="form-check form-switch">                    
                     <label class="form-check-label" for="Switch8">عرض فاتورة المشتريات</label>
+                    <input class="form-check-input" type="checkbox" id="Switch8" checked>
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch9" checked>
                     <label class="form-check-label" for="Switch9">عرض الموردين</label>
+                    <input class="form-check-input" type="checkbox" id="Switch9" checked>                 
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch10" checked>
                     <label class="form-check-label" for="Switch10">إضافة مورد</label>
+                    <input class="form-check-input" type="checkbox" id="Switch10" checked>                   
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch11" checked>
                     <label class="form-check-label" for="Switch11">استرجاع فاتورة مشتريات</label>
+                    <input class="form-check-input" type="checkbox" id="Switch11" checked>                   
                 </div>
             </div>
 
@@ -276,39 +290,39 @@
                     <div>منح/سحب</div>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch1" checked>
+                <div class="form-check form-switch">                  
                     <label class="form-check-label" for="Switch1">المبيعات</label>
+                    <input class="form-check-input" type="checkbox" id="Switch1" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch2" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch2">إنشاء فاتورة</label>
+                    <input class="form-check-input" type="checkbox" id="Switch2" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch3" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch3">عرض الفواتير المعلقة</label>
+                    <input class="form-check-input" type="checkbox" id="Switch3" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch4" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch4">استكمال فاتورة معلقة</label>
+                    <input class="form-check-input" type="checkbox" id="Switch4" checked>
                 </div>
                 <hr>
                 <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch5" checked>
                     <label class="form-check-label" for="Switch5">استرجاع فاتورة</label>
+                    <input class="form-check-input" type="checkbox" id="Switch5" checked>                   
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch6" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch6">عرض العملاء</label>
+                    <input class="form-check-input" type="checkbox" id="Switch6" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch7" checked>
+                <div class="form-check form-switch">                    
                     <label class="form-check-label" for="Switch7">تعديل عميل</label>
+                    <input class="form-check-input" type="checkbox" id="Switch7" checked>
                 </div>
             </div>
 
@@ -326,29 +340,29 @@
                     <div>منح/سحب</div>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch1" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch1">التقارير</label>
+                    <input class="form-check-input" type="checkbox" id="Switch1" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch2" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch2">عرض البضائع</label>
+                    <input class="form-check-input" type="checkbox" id="Switch2" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch3" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch3">الكاشير</label>
+                    <input class="form-check-input" type="checkbox" id="Switch3" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch4" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch4">عرض الفواتير</label>
+                    <input class="form-check-input" type="checkbox" id="Switch4" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch5" checked>
+                <div class="form-check form-switch">                  
                     <label class="form-check-label" for="Switch5">عرض التقارير اليومية</label>
+                    <input class="form-check-input" type="checkbox" id="Switch5" checked>
                 </div>
             </div>
 
@@ -366,34 +380,34 @@
                     <div>منح/سحب</div>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch1" checked>
+                <div class="form-check form-switch">                  
                     <label class="form-check-label" for="Switch1">المالية</label>
+                    <input class="form-check-input" type="checkbox" id="Switch1" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch2" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch2">إضافة موظف جديد</label>
+                    <input class="form-check-input" type="checkbox" id="Switch2" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch3" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch3">عرض الموظفين</label>
+                    <input class="form-check-input" type="checkbox" id="Switch3" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch4" checked>
+                <div class="form-check form-switch">                 
                     <label class="form-check-label" for="Switch4">تعديل صلاحيات موظف</label>
+                    <input class="form-check-input" type="checkbox" id="Switch4" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch5" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch5">التطبيق</label>
+                    <input class="form-check-input" type="checkbox" id="Switch5" checked>
                 </div>
                 <hr>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="Switch6" checked>
+                <div class="form-check form-switch">                   
                     <label class="form-check-label" for="Switch6">الإعدادات</label>
+                    <input class="form-check-input" type="checkbox" id="Switch6" checked>
                 </div>
             </div>
 

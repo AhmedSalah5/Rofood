@@ -61,5 +61,17 @@ $(document).ready(function () {
         $(target).show(300);
     })
 
+    //Change Direction
+    $('.top-nav .ar').click(function () {
+        $('body').removeClass('ltr')
+    })
+    $('.top-nav .en').click(function () {
+        $('body').addClass('ltr')
+    })
 
+
+    //Side Nav Toggler
+    $('.side-nav-toggler').click(function () {
+        $('.side-nav').toggleClass('opened');
+    })
 })
